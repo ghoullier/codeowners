@@ -1,6 +1,6 @@
 {
-  "name": "@ghoullier/bun-typescript-template",
-  "description": "Provide a modern and ready to use template to setup a typescript project",
+  "name": "@ghoullier/codeowners",
+  "description": "Provide utilities to parse and explore codeowners",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
