@@ -46,9 +46,7 @@ describe("parseLine()", () => {
     ).toStrictEqual(["package.json", ["@org/team1", "@org/team2"]]);
   });
   it("should throw when no path found", () => {
-    expect(() => parseLine("")).toThrow(
-      'Invalid path',
-    );
+    expect(() => parseLine("")).toThrow("Invalid path");
   });
   it("should throw when no codeowners found", () => {
     expect(() => parseLine("package.json")).toThrow(
