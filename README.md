@@ -1,6 +1,6 @@
-# bun-typescript-template
+# codeowners
 
-Provide a modern and ready to use template to setup a typescript project
+Provide utilities to parse and explore codeowners
 
 > This Project rely on [bun](https://bun.sh) toolchain
 
