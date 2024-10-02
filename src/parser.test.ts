@@ -1,5 +1,10 @@
 import { describe, expect, it } from "bun:test";
-import { parseContent, parseLine, isCommentLine, isEmptyLine } from "./parser";
+import {
+  isCommentLine,
+  isEmptyLine,
+  parseContent,
+  parseLine,
+} from "./parser.js";
 
 describe("parseContent()", () => {
   it("should ignore comments", () => {
@@ -29,42 +34,41 @@ describe("parseContent()", () => {
 
 describe("parseLine()", () => {
   it("should support multiple owners", () => {
-    expect(parseLine(`package.json @org/team1 @org/team2`)).toStrictEqual([
+    expect(parseLine("package.json @org/team1 @org/team2")).toStrictEqual([
       "package.json",
       ["@org/team1", "@org/team2"],
     ]);
   });
   it("should support extra spaces", () => {
-    expect(parseLine(`package.json    @org/team1      @org/team2`)).toStrictEqual([
-      "package.json",
-      ["@org/team1", "@org/team2"],
-    ]);
+    expect(
+      parseLine("package.json    @org/team1      @org/team2"),
+    ).toStrictEqual(["package.json", ["@org/team1", "@org/team2"]]);
   });
 });
 
 describe("isCommentLine()", () => {
   it("should support extra space", () => {
-    expect(isCommentLine(`  # Hello    `)).toBeTrue();
+    expect(isCommentLine("  # Hello    ")).toBeTrue();
   });
   it("should support start with #", () => {
-    expect(isCommentLine(`# Hello`)).toBeTrue();
+    expect(isCommentLine("# Hello")).toBeTrue();
   });
   it("should detect valid lines", () => {
-    expect(isCommentLine(`hello`)).toBeFalse();
+    expect(isCommentLine("hello")).toBeFalse();
   });
   it("should detect empty lines", () => {
-    expect(isCommentLine(``)).toBeFalse();
+    expect(isCommentLine("")).toBeFalse();
   });
 });
 
 describe("isEmptyLine()", () => {
   it("should support extra space", () => {
-    expect(isEmptyLine(`  `)).toBeTrue();
+    expect(isEmptyLine("  ")).toBeTrue();
   });
   it("should detect empty lines", () => {
-    expect(isEmptyLine(``)).toBeTrue();
+    expect(isEmptyLine("")).toBeTrue();
   });
   it("should detect valid lines", () => {
-    expect(isEmptyLine(` hello  `)).toBeFalse();
+    expect(isEmptyLine(" hello  ")).toBeFalse();
   });
 });
