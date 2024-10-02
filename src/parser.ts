@@ -7,7 +7,7 @@ class ParseError extends Error {}
 
 /**
  * Test if a line is a comment
- * @param {string} line 
+ * @param {string} line
  * @returns {boolean}
  */
 function isCommentLine(line: string): boolean {
@@ -16,7 +16,7 @@ function isCommentLine(line: string): boolean {
 
 /**
  * Test if a line is empty
- * @param {string} line 
+ * @param {string} line
  * @returns {boolean}
  */
 function isEmptyLine(line: string): boolean {
@@ -25,7 +25,7 @@ function isEmptyLine(line: string): boolean {
 
 /**
  * Parse a CODEOWNERS line
- * @param {string} line 
+ * @param {string} line
  * @returns {ParsedLine}
  */
 function parseLine(line: string): ParsedLine {
@@ -41,7 +41,7 @@ function parseLine(line: string): ParsedLine {
 
 /**
  * Parse string based CODEOWNERS content
- * @param {string} content 
+ * @param {string} content
  * @returns {Codeowners}
  */
 function parseContent(content: string): Codeowners {

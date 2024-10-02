@@ -13,10 +13,7 @@
     "lint:package": "publint .",
     "lint:fix": "biome check --write --unsafe"
   },
-  "files": [
-    "dist",
-    "package.json"
-  ],
+  "files": ["dist", "package.json"],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
