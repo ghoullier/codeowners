@@ -12,5 +12,12 @@
   "formatter": {
     "formatWithErrors": true,
     "indentStyle": "space"
+  },
+
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "defaultBranch": "main"
   }
 }
