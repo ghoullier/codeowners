@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.1.0](https://github.com/ghoullier/codeowners/compare/v1.0.0...v1.1.0) (2024-10-02)
+
+
+### Features
+
+* implementation ([#3](https://github.com/ghoullier/codeowners/issues/3)) ([0aa1e07](https://github.com/ghoullier/codeowners/commit/0aa1e07b38145bba92e2c3b228883f15c1635b0a))
+
+
+### Bug Fixes
+
+* lint issues ([#4](https://github.com/ghoullier/codeowners/issues/4)) ([c13bb14](https://github.com/ghoullier/codeowners/commit/c13bb147149ccf79979fe4e888441095cafd1225))
+
+
+### Miscellaneous
+
+* rename package ([#1](https://github.com/ghoullier/codeowners/issues/1)) ([1f0fa71](https://github.com/ghoullier/codeowners/commit/1f0fa71c496ddedab4780dfd07350047ec2d5811))
+
 ## 1.0.0 (2024-02-10)
 
 
