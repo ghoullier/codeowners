@@ -4,36 +4,51 @@ Provide utilities to parse and explore codeowners
 
 > This Project rely on [bun](https://bun.sh) toolchain
 
-## Getting Started
+## Installation
 
-## GitHub Action Configuration
+```sh
+npx jsr add @ghoullier/codeowners
+```
 
-Configure `${{secrets.DEPENDABOT_AUTOMERGE_TOKEN}}`
+## Basic Usage
 
-Create a [fine-grained personal access tokens](https://github.com/settings/personal-access-tokens/new) with permissions below ⬇️
+```typescript
+import { parser } from "@ghoullier/codeowners";
 
-✅ **Read** access to metadata
+const parsed = parse(`
+# Core
+package.json @org/team1
+## Packages
+packages/app1 @org/team1
+packages/app2 @org/team2
+[`);
 
-✅ **Read** and **Write** access to code and pull requests
+/*
+[
+    ["package.json", ["@org/team1"]],
+    ["packages/app1", ["@org/team1"]],
+    ["packages/app2", ["@org/team2"]],
+]
+*/
+```
 
-## Builtin `jsr.io`` support
-
+## How to contribute ?
 
 See [jsr.io official documentation](https://jsr.io/docs/publishing-packages)
 
-## Install project
+### Install project
 
 ```sh
 bun install
 ```
 
-## Run test
+### Run test
 
 ```sh
 bun test
 ```
 
-## Build the project
+### Build the project
 
 ```sh
 bun run build

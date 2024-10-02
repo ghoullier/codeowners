@@ -1,1 +1,1 @@
-export {};
+export { parseContent as parse } from "./parser";
