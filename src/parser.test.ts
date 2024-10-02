@@ -1,5 +1,6 @@
 import { describe, expect, it } from "bun:test";
 import {
+  ParseError,
   isCommentLine,
   isEmptyLine,
   parseContent,
@@ -43,6 +44,16 @@ describe("parseLine()", () => {
     expect(
       parseLine("package.json    @org/team1      @org/team2"),
     ).toStrictEqual(["package.json", ["@org/team1", "@org/team2"]]);
+  });
+  it("should throw when no path found", () => {
+    expect(() => parseLine("")).toThrow(
+      'Invalid path',
+    );
+  });
+  it("should throw when no codeowners found", () => {
+    expect(() => parseLine("package.json")).toThrow(
+      'No codeowners for "package.json"',
+    );
   });
 });
 
