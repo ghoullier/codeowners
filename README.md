@@ -13,9 +13,9 @@ npx jsr add @ghoullier/codeowners
 ## Basic Usage
 
 ```typescript
-import { parser } from "@ghoullier/codeowners";
+import { parse } from "@ghoullier/codeowners";
 
-const parsed = parse(`
+const codeowners = parse(`
 # Core
 package.json @org/team1
 ## Packages
