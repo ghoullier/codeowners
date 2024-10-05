@@ -1,0 +1,81 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`groupBy() should group by paths 1`] = `
+{
+  "byOwner": 
+Map {
+    "@org/team1" =>     
+Set {
+      "apps/",
+    }
+,
+    "@org/team2" =>     
+Set {
+      "packages/",
+    }
+,
+  }
+,
+  "byPath": 
+Map {
+    "apps/" =>     
+Set {
+      "@org/team1",
+    }
+,
+    "packages/" =>     
+Set {
+      "@org/team2",
+    }
+,
+  }
+,
+}
+`;
+
+exports[`groupBy() should group by owners 1`] = `
+{
+  "byOwner": 
+Map {
+    "@org/team1" =>     
+Set {
+      "apps/",
+      "shared/",
+    }
+,
+    "@org/team3" =>     
+Set {
+      "apps/",
+    }
+,
+    "@org/team2" =>     
+Set {
+      "packages/",
+      "shared/",
+    }
+,
+  }
+,
+  "byPath": 
+Map {
+    "apps/" =>     
+Set {
+      "@org/team1",
+      "@org/team3",
+    }
+,
+    "packages/" =>     
+Set {
+      "@org/team2",
+    }
+,
+    "shared/" =>     
+Set {
+      "@org/team1",
+      "@org/team2",
+    }
+,
+  }
+,
+}
+`;

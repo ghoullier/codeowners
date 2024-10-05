@@ -1,11 +1,8 @@
 import { EOL } from "node:os";
 
-type ParsedLine = [path: string, owners: string[]];
-type Codeowners = ParsedLine[];
+import { type Codeowners, ParseError, type ParsedLine } from "./types.js";
 
-class ParseError extends Error {}
-
-/**
+/**b
  * Test if a line is a comment
  * @param {string} line
  * @returns {boolean}

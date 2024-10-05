@@ -1,6 +1,5 @@
 import { describe, expect, it } from "bun:test";
 import {
-  ParseError,
   isCommentLine,
   isEmptyLine,
   parseContent,
