@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/ghoullier/codeowners/compare/v1.2.0...v1.2.1) (2024-10-08)
+
+
+### Miscellaneous
+
+* improve jsr config ([#11](https://github.com/ghoullier/codeowners/issues/11)) ([493c8ef](https://github.com/ghoullier/codeowners/commit/493c8ef9ac477435f4e39b6b6031e638c8a5638c))
+
 ## [1.2.0](https://github.com/ghoullier/codeowners/compare/v1.1.0...v1.2.0) (2024-10-08)
 
 
