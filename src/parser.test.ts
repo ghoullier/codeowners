@@ -1,11 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import {
-  ParseError,
-  isCommentLine,
-  isEmptyLine,
-  parseContent,
-  parseLine,
-} from "./parser.js";
+import { isCommentLine, isEmptyLine, parseContent, parseLine } from "./parser";
 
 describe("parseContent()", () => {
   it("should ignore comments", () => {
