@@ -1,6 +1,11 @@
 import type { Codeowners } from "./types.ts";
 
-export function groupCodeownersBy(codeowners: Codeowners) {
+type CodeownersGroupedBy = {
+  byOwner: Map<string, Set<string>>;
+  byPath: Map<string, Set<string>>;
+};
+
+export function groupCodeownersBy(codeowners: Codeowners): CodeownersGroupedBy {
   return codeowners.reduce(
     ({ byOwner, byPath }, [path, owners]) => {
       const value = byPath.get(path) ?? new Set();
