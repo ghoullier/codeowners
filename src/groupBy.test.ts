@@ -1,6 +1,6 @@
 import { describe, expect, it } from "bun:test";
 
-import { groupCodeownersBy } from "./groupBy.js";
+import { groupCodeownersBy } from "./groupBy";
 
 describe("groupBy()", () => {
   it("should group by paths", () => {

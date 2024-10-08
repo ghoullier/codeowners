@@ -1,6 +1,6 @@
 import { EOL } from "node:os";
 
-import { type Codeowners, ParseError, type ParsedLine } from "./types.js";
+import { type Codeowners, ParseError, type ParsedLine } from "./types.ts";
 
 /**b
  * Test if a line is a comment

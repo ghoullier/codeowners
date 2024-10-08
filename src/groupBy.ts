@@ -1,4 +1,4 @@
-import type { Codeowners } from "./types";
+import type { Codeowners } from "./types.ts";
 
 export function groupCodeownersBy(codeowners: Codeowners) {
   return codeowners.reduce(
