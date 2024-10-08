@@ -1,10 +1,24 @@
 import type { Codeowners } from "./types.ts";
 
+/**
+ * Grouped codeowners by path and owner
+ */
 type CodeownersGroupedBy = {
+  /**
+   * Indexed by owner map
+   */
   byOwner: Map<string, Set<string>>;
+  /**
+   * Indexed by path map
+   */
   byPath: Map<string, Set<string>>;
 };
 
+/**
+ * Group a given codeowners struct by owner and path
+ * @param {Codeowners} codeowners
+ * @returns {CodeownersGroupedBy}
+ */
 export function groupCodeownersBy(codeowners: Codeowners): CodeownersGroupedBy {
   return codeowners.reduce(
     ({ byOwner, byPath }, [path, owners]) => {
