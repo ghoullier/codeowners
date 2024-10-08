@@ -1,7 +1,7 @@
 {
   "name": "@ghoullier/codeowners",
   "description": "Provide utilities to parse and explore codeowners",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "module",
   "scripts": {
     "build:lib": "bun build --minify --outdir=dist src/index.ts",
@@ -13,7 +13,10 @@
     "lint:package": "publint .",
     "lint:fix": "biome check --write --unsafe"
   },
-  "files": ["dist", "package.json"],
+  "files": [
+    "dist",
+    "package.json"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

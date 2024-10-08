@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/ghoullier/codeowners/compare/v1.1.0...v1.2.0) (2024-10-08)
+
+
+### Features
+
+* add groupBy helper method ([#7](https://github.com/ghoullier/codeowners/issues/7)) ([cfc698f](https://github.com/ghoullier/codeowners/commit/cfc698fa6867f3206ae3d4d440dcce87079bd5f4))
+
+
+### Miscellaneous
+
+* **deps-dev:** bump bun-types from 1.1.29 to 1.1.30 ([#8](https://github.com/ghoullier/codeowners/issues/8)) ([c9cd9a2](https://github.com/ghoullier/codeowners/commit/c9cd9a2d18bdbe2b8f4450d66e2f94d2334354fe))
+
 ## [1.1.0](https://github.com/ghoullier/codeowners/compare/v1.0.0...v1.1.0) (2024-10-02)
 
 
