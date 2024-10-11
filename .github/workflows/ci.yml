@@ -18,6 +18,15 @@ permissions:
   packages: write # to publish packages (npm publish)
 
 jobs:
+  test-node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/github-script
+      - uses: ./.github/actions/github-script
+        with: 
+          node-version: node22
+
   ci-setup:
     runs-on: ubuntu-latest
     steps:

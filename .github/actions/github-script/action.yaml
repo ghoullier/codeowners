@@ -1,0 +1,9 @@
+name: Node Version
+
+inputs:
+  node-verion:
+    default: node20
+
+runs:
+  using: ${{ inputs.node-version }}
+  main: index.js
