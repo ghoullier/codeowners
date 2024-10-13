@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.2](https://github.com/ghoullier/codeowners/compare/v1.2.1...v1.2.2) (2024-10-13)
+
+
+### Miscellaneous
+
+* **deps-dev:** bump @types/bun from 1.1.10 to 1.1.11 ([#13](https://github.com/ghoullier/codeowners/issues/13)) ([8f50f31](https://github.com/ghoullier/codeowners/commit/8f50f31d1c50ac42fc119a999e289af8e9778ae5))
+* **deps-dev:** bump typescript from 5.6.2 to 5.6.3 ([#14](https://github.com/ghoullier/codeowners/issues/14)) ([42e3cc8](https://github.com/ghoullier/codeowners/commit/42e3cc8aa983589c5889d74133154e5abc8d5f58))
+
 ## [1.2.1](https://github.com/ghoullier/codeowners/compare/v1.2.0...v1.2.1) (2024-10-08)
 
 
