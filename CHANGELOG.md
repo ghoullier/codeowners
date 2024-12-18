@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.2.2](https://github.com/ghoullier/codeowners/compare/v1.2.1...v1.2.2) (2024-12-18)
+
+
+### Miscellaneous
+
+* **deps-dev:** bump @arethetypeswrong/cli from 0.16.4 to 0.17.0 ([#25](https://github.com/ghoullier/codeowners/issues/25)) ([b2d5ace](https://github.com/ghoullier/codeowners/commit/b2d5aceb454c48e6002f8c0858a2b979782c9699))
+* **deps-dev:** bump @arethetypeswrong/cli from 0.17.0 to 0.17.1 ([#31](https://github.com/ghoullier/codeowners/issues/31)) ([762b53b](https://github.com/ghoullier/codeowners/commit/762b53b8e80b08da8bbe92015f44db450b1d4223))
+* **deps-dev:** bump @biomejs/biome from 1.9.3 to 1.9.4 ([#17](https://github.com/ghoullier/codeowners/issues/17)) ([4c594b5](https://github.com/ghoullier/codeowners/commit/4c594b5294e3a3577b45cc97a6c4fd5dcdabb3ad))
+* **deps-dev:** bump @types/bun from 1.1.10 to 1.1.11 ([#13](https://github.com/ghoullier/codeowners/issues/13)) ([8f50f31](https://github.com/ghoullier/codeowners/commit/8f50f31d1c50ac42fc119a999e289af8e9778ae5))
+* **deps-dev:** bump @types/bun from 1.1.11 to 1.1.12 ([#20](https://github.com/ghoullier/codeowners/issues/20)) ([25d7358](https://github.com/ghoullier/codeowners/commit/25d73582471f3d8073c2e3b888a72b16cb23fa0e))
+* **deps-dev:** bump @types/bun from 1.1.12 to 1.1.13 ([#24](https://github.com/ghoullier/codeowners/issues/24)) ([8c6321c](https://github.com/ghoullier/codeowners/commit/8c6321c1b62073e87113b4aa35463b378ae02109))
+* **deps-dev:** bump @types/bun from 1.1.13 to 1.1.14 ([#29](https://github.com/ghoullier/codeowners/issues/29)) ([4226281](https://github.com/ghoullier/codeowners/commit/42262815756099ea10fc46fdb274c96f305147cc))
+* **deps-dev:** bump bun-types from 1.1.30 to 1.1.31 ([#18](https://github.com/ghoullier/codeowners/issues/18)) ([a212d66](https://github.com/ghoullier/codeowners/commit/a212d668b5ec28f51fa130cf8e794660e4f05061))
+* **deps-dev:** bump bun-types from 1.1.31 to 1.1.32 ([#19](https://github.com/ghoullier/codeowners/issues/19)) ([1f97197](https://github.com/ghoullier/codeowners/commit/1f971970e0ddb7bfe0580af381dcd55b9ec2846e))
+* **deps-dev:** bump bun-types from 1.1.32 to 1.1.33 ([#21](https://github.com/ghoullier/codeowners/issues/21)) ([d3f33f1](https://github.com/ghoullier/codeowners/commit/d3f33f19003425e4f02cb0e0e471875bdd0d6866))
+* **deps-dev:** bump bun-types from 1.1.33 to 1.1.34 ([#23](https://github.com/ghoullier/codeowners/issues/23)) ([c2ed79c](https://github.com/ghoullier/codeowners/commit/c2ed79c27d32ea470374d4e23f990f82dc656025))
+* **deps-dev:** bump bun-types from 1.1.34 to 1.1.36 ([#26](https://github.com/ghoullier/codeowners/issues/26)) ([f3541b0](https://github.com/ghoullier/codeowners/commit/f3541b0c76ea1bd8b1eb30f8e7849bd5182cf714))
+* **deps-dev:** bump bun-types from 1.1.36 to 1.1.37 ([#28](https://github.com/ghoullier/codeowners/issues/28)) ([33900c9](https://github.com/ghoullier/codeowners/commit/33900c96878dc0322c518ff52b463c907f6235c0))
+* **deps-dev:** bump bun-types from 1.1.37 to 1.1.38 ([#30](https://github.com/ghoullier/codeowners/issues/30)) ([176faf2](https://github.com/ghoullier/codeowners/commit/176faf2514777ebd5ae9034a6f90359294416852))
+* **deps-dev:** bump bun-types from 1.1.38 to 1.1.39 ([#32](https://github.com/ghoullier/codeowners/issues/32)) ([cf1a45f](https://github.com/ghoullier/codeowners/commit/cf1a45ff63f93796851b3cd30568a25ec62e8ffc))
+* **deps-dev:** bump bun-types from 1.1.39 to 1.1.40 ([#33](https://github.com/ghoullier/codeowners/issues/33)) ([918df5e](https://github.com/ghoullier/codeowners/commit/918df5e922d75e442fe7e2b47a8a32238903bc14))
+* **deps-dev:** bump publint from 0.2.11 to 0.2.12 ([#22](https://github.com/ghoullier/codeowners/issues/22)) ([225d66b](https://github.com/ghoullier/codeowners/commit/225d66b4516cefe24b5fd7c7715ba6e7cfd3cf51))
+* **deps-dev:** bump typescript from 5.6.2 to 5.6.3 ([#14](https://github.com/ghoullier/codeowners/issues/14)) ([42e3cc8](https://github.com/ghoullier/codeowners/commit/42e3cc8aa983589c5889d74133154e5abc8d5f58))
+* **deps-dev:** bump typescript from 5.6.3 to 5.7.2 ([#27](https://github.com/ghoullier/codeowners/issues/27)) ([025aff6](https://github.com/ghoullier/codeowners/commit/025aff6eb76ff4a2b5d662338f7d6e34a98b6468))
+
 ## [1.2.1](https://github.com/ghoullier/codeowners/compare/v1.2.0...v1.2.1) (2024-10-08)
 
 
